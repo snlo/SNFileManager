@@ -15,6 +15,7 @@
 		5EB00121209F4265003E8AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB00120209F4265003E8AF8 /* main.m */; };
 		5EB0012B209F4266003E8AF8 /* SNFileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0012A209F4266003E8AF8 /* SNFileManagerTests.m */; };
 		5EB00136209F4266003E8AF8 /* SNFileManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB00135209F4266003E8AF8 /* SNFileManagerUITests.m */; };
+		5EB00146209F42C8003E8AF8 /* SNFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB00145209F42C8003E8AF8 /* SNFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5EB00131209F4266003E8AF8 /* SNFileManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNFileManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB00135209F4266003E8AF8 /* SNFileManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNFileManagerUITests.m; sourceTree = "<group>"; };
 		5EB00137209F4266003E8AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB00144209F42C8003E8AF8 /* SNFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNFileManager.h; sourceTree = "<group>"; };
+		5EB00145209F42C8003E8AF8 /* SNFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 				5EB00112209F4265003E8AF8 /* AppDelegate.m */,
 				5EB00114209F4265003E8AF8 /* ViewController.h */,
 				5EB00115209F4265003E8AF8 /* ViewController.m */,
+				5EB00143209F42B1003E8AF8 /* SNFileManager */,
 				5EB00117209F4265003E8AF8 /* Main.storyboard */,
 				5EB0011A209F4265003E8AF8 /* Assets.xcassets */,
 				5EB0011C209F4265003E8AF8 /* LaunchScreen.storyboard */,
@@ -130,6 +134,15 @@
 				5EB00137209F4266003E8AF8 /* Info.plist */,
 			);
 			path = SNFileManagerUITests;
+			sourceTree = "<group>";
+		};
+		5EB00143209F42B1003E8AF8 /* SNFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				5EB00144209F42C8003E8AF8 /* SNFileManager.h */,
+				5EB00145209F42C8003E8AF8 /* SNFileManager.m */,
+			);
+			path = SNFileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +277,7 @@
 			files = (
 				5EB00116209F4265003E8AF8 /* ViewController.m in Sources */,
 				5EB00121209F4265003E8AF8 /* main.m in Sources */,
+				5EB00146209F42C8003E8AF8 /* SNFileManager.m in Sources */,
 				5EB00113209F4265003E8AF8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
