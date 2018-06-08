@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "SNFileManager.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString * string = @"File directory";
+    
+    if ([SNFileManager createDirectoryAtPath:[SNFileManager TmpPath] directoryName:@"tempName" newFilePath:&string]) {
+        NSLog(@"新建成功, 文件目录为： %@",string);
+    } else {
+        NSLog(@"新建失败或文件目录已经存在");
+    }
 }
 
 
